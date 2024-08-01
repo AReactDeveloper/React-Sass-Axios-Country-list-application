@@ -1,0 +1,21 @@
+.countryCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--clr-white);
+    box-shadow: var(--box-shadow-light);
+    border-radius: 7px;
+    overflow: hidden;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    &.dark{
+        box-shadow: var(--box-shadow-dark);
+        color: var(--clr-white);
+        background-color: var(--clr-dark-blue);
+    }
+}
+

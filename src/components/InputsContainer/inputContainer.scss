@@ -1,0 +1,64 @@
+.inputContainer{
+    margin-block:20px;
+    padding-inline: 30px;
+    gap: 20px;
+    &__search{
+        margin-bottom: 20px;
+        position: relative;
+        &__icon{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            z-index: 11;
+            & svg{
+                fill: #ccc;
+            }
+        }
+        & input{
+            width: 100%;
+            padding: 15px 50px;
+            border: none;
+            box-shadow: 5px 2px 5px rgba(1, 1, 1, 0.1);
+            position: relative;
+            &:focus{
+                outline: none;
+            }
+        }
+   
+    }
+    &__regions{
+        position: relative;
+        & select {
+            appearance: none;
+            padding: 20px 40px;
+            border: 0;
+            box-shadow: 5px 2px 5px rgba(1, 1, 1, 0.1);
+            font-weight: var(--fw-semi-bold);
+            &:focus{
+                outline: none;
+            }
+            
+        }
+        
+        &__arrow {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+        }
+    }
+    &.dark{
+        & input , & select{
+            background-color: var(--clr-dark-blue);
+            color: white;
+            & svg{
+                fill: #fff;
+            }
+        }
+    }
+    @media (min-width:800px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+

@@ -1,0 +1,27 @@
+.paginationList{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+    padding-block: 30px;
+    overflow: hidden;
+    & button{
+        font-size: 18px;
+        padding: 7px;
+        border: 0;
+        background-color: transparent;
+        &:hover{
+            box-shadow: 0 2px 0 0 #444;
+            cursor: pointer;
+        }
+    }
+
+    &.dark{
+        & button{
+            color: var(--clr-white-text);
+            &:hover{
+                box-shadow: 0 2px 0 0 #fff;
+            }
+        }
+    }
+}
