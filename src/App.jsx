@@ -17,7 +17,7 @@ export default function App() {
   const inputRef = useRef()
   //pagination
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(8)
+  const [postsPerPage] = useState(10)
   //countries state reset
   const [searchQuery,setSearchQuery] = useState('')
   //displayed countries

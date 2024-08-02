@@ -58,6 +58,7 @@ export default function SingleCountry({countryList}) {
     })
     const currencyString = currencyList.join(' , ')
 
+    //to local string in population makes it formated like 1,000,000 instead of this 1 000 000 
     return (
     <>
         <Header />
@@ -72,7 +73,7 @@ export default function SingleCountry({countryList}) {
               <h2>{state.name}</h2>
               <ul className="singleCountry__grid__item__list">
                 <li><span className='text-bold'>Native Name</span> : {state.nativeName}</li>
-                <li><span className='text-bold'>Population</span> : {state.population}</li>
+                <li><span className='text-bold'>Population</span> : {state.population.toLocaleString()}</li>
                 <li><span className='text-bold'>Region</span> : {state.region}</li>
                 <li><span className='text-bold'>Sub Region</span> : {state.subregion}</li>
                 <li><span className='text-bold'>Capital</span> : {state.capital}</li>

@@ -34,10 +34,15 @@ img{
     height: auto;
 }
 
-.body{
-    font-size: var(--fs-main);
+html{
     font-family: var(--ff);
 }
+
+.body{
+    font-size: 16px;
+    font-family: var(--ff);
+}
+
 
 .container{
     max-width: 1440px;
