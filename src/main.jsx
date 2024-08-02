@@ -7,7 +7,7 @@ import { ThemeProvider } from './context/ThemeContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ThemeProvider>
-    <BrowserRouter>
+    <BrowserRouter basename='/React-Sass-Axios-Country-list-application/'>
       <Routes>
           <Route path='/' element={<App />} />
         <Route path='/country/:postId' element={<SingleCountry />} />
