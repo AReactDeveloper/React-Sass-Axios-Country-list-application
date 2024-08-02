@@ -2,12 +2,11 @@
     padding: 20px 25px;
     box-shadow: var(--box-shadow-light);
     background-color: var(--clr-white);
+    z-index: 2;
     & > .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        max-width: 1440px;
-        margin-inline: auto;
     }
     & h1{
         font-size: 16px;

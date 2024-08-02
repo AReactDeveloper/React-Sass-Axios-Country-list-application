@@ -93,14 +93,16 @@ export default function App() {
   return (
         <div className={theme == 'light' ? 'App' : 'App dark'}>
           <Header />
-          <InputsContainer 
+          <div className="container">
+            <InputsContainer 
               inputRef={inputRef} 
               handleInputChange={handleInputChange} 
               handleSelectChange={handleSelectChange}
               region={region}
-          />
-          <CountriesList countries={currentList} />
-          <Pagination pages={totalPages} handlePageChange={handlePageChange} currentPage={currentPage} />
+            />
+            <CountriesList countries={currentList} />
+            <Pagination pages={totalPages} handlePageChange={handlePageChange} currentPage={currentPage} />
+          </div>
         </div>
   )
 }
